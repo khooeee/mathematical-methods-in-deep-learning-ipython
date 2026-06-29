@@ -10,16 +10,14 @@ that correspond to the main book.
 
 ## Installation
 1. Clone the repository: `git clone https://github.com/krishnonwork/mathematical-methods-in-deep-learning-ipython.git`
-2. Create virtual environment: `virtualenv venv --python=python3` (you may need to do  `pip install virtualenv` first)
-3. Activate virtual environment: `source venv/bin/activate` 
-4. Change directory: `cd mathematical-methods-in-deep-learning-ipython`
-5. Install dependencies: `pip install -r requirements.txt`
-6. Navigate to the python directory: `cd python`
-7. Start jupyter: `jupyter notebook`
+2. Change directory: `cd mathematical-methods-in-deep-learning-ipython`
+3. Install dependencies with uv: `uv sync`
+4. Start Jupyter: `uv run jupyter notebook python`
 
 This will redirect you to a browser window with the ipython notebooks 
 
-Note: Ensure to use Python3 to run the notebooks
+Note: The notebooks are pinned to Python 3.10 because several of the original
+package versions do not publish wheels for newer Python releases.
 
 ## Table of Contents
 

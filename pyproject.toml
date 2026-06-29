@@ -1,0 +1,30 @@
+[project]
+name = "mathematical-methods-in-deep-learning-ipython"
+version = "0.1.0"
+description = "Jupyter notebooks for Math and Architectures of Deep Learning"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "future==0.18.2",
+    "ipympl==0.5.7",
+    "jupyter==1.0.0",
+    "matplotlib==3.7.3",
+    "numpy==1.21.5",
+    "torch==1.13.0",
+    "torchvision==0.14.0",
+    "opencv-python==4.7.0.72",
+    "sympy==1.4",
+    "pytorch-lightning==1.5.10",
+    "torchmetrics==0.7.2",
+    "torchsummary==1.5.1",
+    "scikit-learn==1.0.2",
+]
+
+[tool.uv]
+package = false
+dependency-metadata = [
+    { name = "torch", version = "1.13.0", requires-dist = ["typing-extensions"], requires-python = ">=3.7" },
+]
+required-environments = [
+    "sys_platform == 'darwin' and platform_machine == 'arm64'",
+]

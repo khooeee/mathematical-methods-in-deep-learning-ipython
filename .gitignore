@@ -9,5 +9,6 @@ tags
 .idea/*
 *.swp
 .DS_Store
+.venv*/
 python/ch11/datasets/
 python/ch14/datasets/
